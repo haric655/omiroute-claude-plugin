@@ -1,17 +1,23 @@
 {
   "name": "omiroute",
-  "version": "1.0.0",
-  "description": "Use OmniRoute from Claude Code to route AI requests through OmniRoute gateway.",
+  "version": "2.0.0",
+  "description": "Use OmniRoute from Claude Code to route AI requests through OmniRoute gateway. Includes code review, adversarial review, background tasks, and delegation via 380+ models.",
   "author": {
     "name": "haric655"
   },
   "repository": "https://github.com/haric655/omiroute-claude-plugin",
   "license": "MIT",
-  "keywords": ["omniroute", "ai-gateway", "claude-code", "llm", "providers"],
+  "keywords": ["omniroute", "ai-gateway", "claude-code", "llm", "providers", "code-review", "delegation", "background-tasks"],
   "commands": {
     "setup": "./commands/setup.md",
     "launch": "./commands/launch.md",
-    "profiles": "./commands/profiles.md"
+    "profiles": "./commands/profiles.md",
+    "delegate": "./commands/delegate.md",
+    "adversarial-review": "./commands/adversarial-review.md",
+    "background": "./commands/background.md",
+    "status": "./commands/status.md",
+    "result": "./commands/result.md",
+    "cancel": "./commands/cancel.md"
   },
   "hooks": "./hooks/hooks.json",
   "scripts": {
@@ -19,6 +25,13 @@
     "launch": "./scripts/omniroute-launch.mjs",
     "profiles": "./scripts/omniroute-profiles.mjs",
     "session-start": "./scripts/omniroute-session-start.mjs",
-    "session-end": "./scripts/omniroute-session-end.mjs"
+    "session-end": "./scripts/omiroute-session-end.mjs",
+    "delegate": "./scripts/omniroute-delegate.mjs",
+    "adversarial-review": "./scripts/omniroute-adversarial-review.mjs",
+    "background": "./scripts/omniroute-background.mjs",
+    "status": "./scripts/omniroute-status.mjs",
+    "result": "./scripts/omniroute-result.mjs",
+    "cancel": "./scripts/omniroute-cancel.mjs",
+    "stop-review-gate": "./scripts/omniroute-stop-review-gate.mjs"
   }
 }
