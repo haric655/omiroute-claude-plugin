@@ -14,7 +14,7 @@ const CACHE_TTL = 24 * 60 * 60 * 1000; // 24 hours
 
 export class OmniRouteClient {
   constructor(options = {}) {
-    this.baseUrl = options.baseUrl || process.env.OMNIROUTE_BASE_URL || 'https://api.omniroute.ai';
+    this.baseUrl = options.baseUrl || process.env.OMNIROUTE_BASE_URL || 'http://localhost:20128';
     this.apiKey = options.apiKey || process.env.OMNIROUTE_API_KEY;
     this.timeout = options.timeout || 120000;
     this._modelCache = null;
@@ -57,7 +57,7 @@ export class OmniRouteClient {
    */
   static getBaseUrl() {
     const config = this.loadConfig();
-    return config.baseUrl || process.env.OMNIROUTE_BASE_URL || 'https://api.omniroute.ai';
+      return config.baseUrl || process.env.OMNIROUTE_BASE_URL || 'http://localhost:20128';
   }
 
   /**
