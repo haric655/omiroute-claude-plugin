@@ -1,0 +1,21 @@
+{
+  "name": "omiroute",
+  "version": "1.0.0",
+  "description": "Use OmniRoute from Claude Code to route AI requests through OmniRoute gateway.",
+  "author": {
+    "name": "OmniRoute"
+  },
+  "commands": {
+    "setup": "./commands/setup.md",
+    "launch": "./commands/launch.md",
+    "profiles": "./commands/profiles.md"
+  },
+  "hooks": "./hooks/hooks.json",
+  "scripts": {
+    "setup": "./scripts/omniroute-setup.mjs",
+    "launch": "./scripts/omniroute-launch.mjs",
+    "profiles": "./scripts/omniroute-profiles.mjs",
+    "session-start": "./scripts/omniroute-session-start.mjs",
+    "session-end": "./scripts/omniroute-session-end.mjs"
+  }
+}
