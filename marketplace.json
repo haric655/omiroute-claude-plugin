@@ -1,0 +1,25 @@
+{
+  "name": "omiroute",
+  "owner": {
+    "name": "haric655"
+  },
+  "metadata": {
+    "description": "OmniRoute plugin for Claude Code - route AI requests through OmniRoute gateway to access 380+ AI providers",
+    "version": "1.0.0",
+    "repository": "https://github.com/haric655/omiroute-claude-plugin",
+    "license": "MIT",
+    "keywords": ["omniroute", "ai-gateway", "claude-code", "llm", "providers"],
+    "screenshots": []
+  },
+  "plugins": [
+    {
+      "name": "omiroute",
+      "description": "Use OmniRoute from Claude Code to route AI requests through OmniRoute gateway",
+      "version": "1.0.0",
+      "author": {
+        "name": "haric655"
+      },
+      "source": "."
+    }
+  ]
+}

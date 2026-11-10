@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "Use OmniRoute from Claude Code to route AI requests through OmniRoute gateway.",
   "author": {
-    "name": "OmniRoute"
+    "name": "haric655"
   },
+  "repository": "https://github.com/haric655/omiroute-claude-plugin",
+  "license": "MIT",
+  "keywords": ["omniroute", "ai-gateway", "claude-code", "llm", "providers"],
   "commands": {
     "setup": "./commands/setup.md",
     "launch": "./commands/launch.md",
