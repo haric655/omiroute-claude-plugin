@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-                node-version: '22'
+          node-version: '22'
 
       - name: Validate JSON files
         run: |
@@ -49,6 +49,6 @@ jobs:
           "
 
       - name: Validate marketplace.json
-              run: |
-                node -e "JSON.parse(require('fs').readFileSync('marketplace.json', 'utf8'))"
-                echo "✅ marketplace.json valid"
+        run: |
+          node -e "JSON.parse(require('fs').readFileSync('marketplace.json', 'utf8'))"
+          echo "✅ marketplace.json valid"
