@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+                node-version: '22'
 
       - name: Validate JSON files
         run: |
@@ -48,8 +48,7 @@ jobs:
             console.log('✅ plugin.json has all required fields');
           "
 
-      - name: Validate marketplace.json (if exists at root)
-        if: hashFiles('../marketplace.json') != ''
-        run: |
-          node -e "JSON.parse(require('fs').readFileSync('../marketplace.json', 'utf8'))"
-          echo "✅ marketplace.json valid"
+      - name: Validate marketplace.json
+              run: |
+                node -e "JSON.parse(require('fs').readFileSync('marketplace.json', 'utf8'))"
+                echo "✅ marketplace.json valid"
